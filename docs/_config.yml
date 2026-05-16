@@ -13,10 +13,10 @@ related_projects:
     url: https://dmoliveira.github.io/top-uni/
     description: Curated rankings and research context for top CS, AI/ML, and data science universities.
     icon: academia
-  - name: master-philosophers
-    url: https://dmoliveira.github.io/master-philosophers/
-    description: Long-form study hub for foundational thinkers, reading paths, and structured learning.
-    icon: philosopher
+  - name: ai-loop
+    url: https://dmoliveira.github.io/ailoop/
+    description: Operational loop for AI work, execution rhythm, and system-level iteration.
+    icon: github
 theme: null
 markdown: kramdown
 kramdown:

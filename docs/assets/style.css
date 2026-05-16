@@ -589,6 +589,14 @@ a:hover {
   margin-top: 0.28rem;
 }
 
+.brief-trend-grid,
+.brief-priority-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.5rem;
+}
+
 .content blockquote {
   margin: 1.4rem 0;
   padding: 1rem 1.1rem;
@@ -615,6 +623,89 @@ a:hover {
 .note-block ul,
 .note-block ol {
   margin-bottom: 0;
+}
+
+.brief-priority-card,
+.brief-trend-card,
+.entry-card {
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.brief-priority-card,
+.brief-trend-card {
+  padding: 16px 18px;
+}
+
+.entry-card {
+  padding: 20px 20px 18px;
+  margin: 1rem 0 1.5rem;
+}
+
+.entry-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+}
+
+.entry-summary {
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
+.entry-meta-grid,
+.entry-section-grid {
+  display: grid;
+  gap: 10px 14px;
+}
+
+.entry-meta-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.2rem;
+}
+
+.entry-meta-item {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(22, 20, 18, 0.08);
+}
+
+.entry-meta-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.entry-section-grid {
+  grid-template-columns: 1fr;
+  margin-top: 0.9rem;
+}
+
+.entry-section {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(22, 20, 18, 0.08);
+}
+
+.entry-section p {
+  margin: 0;
+}
+
+.entry-section-title {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.entry-link {
+  word-break: break-word;
 }
 
 .content hr {
@@ -670,6 +761,11 @@ a:hover {
   }
 
   .brief-callout {
+    grid-template-columns: 1fr;
+  }
+
+  .brief-trend-grid,
+  .brief-priority-grid {
     grid-template-columns: 1fr;
   }
 
@@ -733,6 +829,10 @@ a:hover {
   .hero-actions {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .entry-meta-grid {
+    grid-template-columns: 1fr;
   }
 
   .content p,

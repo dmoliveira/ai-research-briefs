@@ -45,11 +45,14 @@ summary: Weekly archive of concise AI research digests.
 
 <section class="home-section">
   <h2>Latest Briefs</h2>
+  <p class="home-section-intro">
+    Each issue is written as a dated briefing note: short enough to skim quickly, dense enough to be useful.
+  </p>
 
 <ul class="digest-list">
   <li class="digest-card">
     <p class="meta">2026-05-16 · 2 items</p>
-    <h3><a href="2026/05/2026-05-16.md">AI Research Brief: 2026-05-16</a></h3>
+    <h3><a href="2026/05/2026-05-16.html">AI Research Brief: 2026-05-16</a></h3>
     <p class="digest-summary">Initial sample digest structure for AI, ML, LLM, agent, and recommender research.</p>
     <p class="digest-summary"><strong>Read first:</strong> Example: Adaptive Agent Planning for Long-Horizon Tasks, Example: Retrieval-Aware Preference Modeling</p>
     <div class="pill-row"><span class="pill">ai</span><span class="pill">ml</span><span class="pill">llm</span><span class="pill">agents</span><span class="pill">recommenders</span></div>
@@ -61,6 +64,7 @@ summary: Weekly archive of concise AI research digests.
     <div class="theme-card">
       <p class="section-kicker">Active themes</p>
       <h2>What the archive tracks most.</h2>
+      <p class="home-section-intro">The current tag surface is intentionally compact and will expand as the archive grows.</p>
       <div class="pill-row">
         <span class="pill">ai</span>
         <span class="pill">ml</span>
@@ -72,6 +76,7 @@ summary: Weekly archive of concise AI research digests.
     <div class="theme-card">
       <p class="section-kicker">Archive rhythm</p>
       <h2>Published as a dated research ledger.</h2>
+      <p class="home-section-intro">Organized by month so recurring publication stays browseable rather than buried.</p>
       <ul class="archive-list">
         <li>2026-05: 1 brief</li>
       </ul>

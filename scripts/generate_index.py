@@ -71,7 +71,7 @@ def collect_digests() -> list[dict[str, Any]]:
                 "tags": front_matter.get("tags", []),
                 "featured": front_matter.get("featured", []),
                 "source_count": front_matter.get("source_count", ""),
-                "path": path.relative_to(DOCS).as_posix(),
+                "path": path.relative_to(DOCS).with_suffix(".html").as_posix(),
             }
         )
     return sorted(digests, key=lambda item: item["date"], reverse=True)
@@ -136,6 +136,9 @@ summary: Weekly archive of concise AI research digests.
 
 <section class="home-section">
   <h2>Latest Briefs</h2>
+  <p class="home-section-intro">
+    Each issue is written as a dated briefing note: short enough to skim quickly, dense enough to be useful.
+  </p>
 """
     if not digests:
         return header + '\n<div class="home-empty">No briefs published yet.</div>\n</section>\n'
@@ -169,6 +172,7 @@ summary: Weekly archive of concise AI research digests.
             '    <div class="theme-card">',
             '      <p class="section-kicker">Active themes</p>',
             '      <h2>What the archive tracks most.</h2>',
+            '      <p class="home-section-intro">The current tag surface is intentionally compact and will expand as the archive grows.</p>',
             '      <div class="pill-row">',
         ]
     )
@@ -181,6 +185,7 @@ summary: Weekly archive of concise AI research digests.
             '    <div class="theme-card">',
             '      <p class="section-kicker">Archive rhythm</p>',
             '      <h2>Published as a dated research ledger.</h2>',
+            '      <p class="home-section-intro">Organized by month so recurring publication stays browseable rather than buried.</p>',
             '      <ul class="archive-list">',
         ]
     )

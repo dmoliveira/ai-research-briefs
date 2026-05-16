@@ -91,7 +91,7 @@ def render_index(digests: list[dict[str, Any]]) -> str:
 
     header = f"""---
 title: Research Briefs
-summary: Weekly archive of concise AI research digests.
+summary: Public archive of concise AI research digests.
 ---
 
 <section class="hero">
@@ -100,7 +100,7 @@ summary: Weekly archive of concise AI research digests.
       <p class="section-kicker">Public archive · editorial research digest</p>
       <h1>AI research briefs, organized for fast reading.</h1>
       <p>
-        Weekly issues covering strong new work in AI, ML, LLMs, agents, recommender systems,
+        Dated issues covering strong new work in AI, ML, LLMs, agents, recommender systems,
         and adjacent engineering research, shaped for applied builders rather than hype cycles.
       </p>
       <div class="hero-actions">
@@ -118,7 +118,7 @@ summary: Weekly archive of concise AI research digests.
         </div>
         <div class="stat-card">
           <span class="metric-label">Cadence</span>
-          <strong class="metric-value">Weekly</strong>
+          <strong class="metric-value">Mon · Wed · Fri</strong>
         </div>
       </div>
     </div>
@@ -216,7 +216,7 @@ summary: Weekly archive of concise AI research digests.
             '    <div class="theme-card">',
             '      <p class="section-kicker">Archive rhythm</p>',
             '      <h2>Published as a dated research ledger.</h2>',
-            '      <p class="home-section-intro">Organized by month so recurring publication stays browseable rather than buried.</p>',
+            '      <p class="home-section-intro">Published on a Monday, Wednesday, and Friday rhythm so new issues stay regular without becoming noisy.</p>',
             '      <ul class="archive-list">',
         ]
     )

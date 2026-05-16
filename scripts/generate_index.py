@@ -103,6 +103,10 @@ summary: Weekly archive of concise AI research digests.
         Weekly issues covering strong new work in AI, ML, LLMs, agents, recommender systems,
         and adjacent engineering research, shaped for applied builders rather than hype cycles.
       </p>
+      <div class="hero-actions">
+        <a class="button primary" href="{digests[0]['path'] if digests else '#'}">Open latest brief</a>
+        <a class="button tertiary" href="rss.xml">RSS feed</a>
+      </div>
       <div class="metric-strip">
         <div class="stat-card">
           <span class="metric-label">Briefs</span>
@@ -143,8 +147,34 @@ summary: Weekly archive of concise AI research digests.
     if not digests:
         return header + '\n<div class="home-empty">No briefs published yet.</div>\n</section>\n'
 
-    lines = [header, '<ul class="digest-list">']
-    for digest in digests:
+    lines = [header]
+    featured_digest = digests[0]
+    tags = featured_digest["tags"] if isinstance(featured_digest["tags"], list) else []
+    featured = featured_digest["featured"] if isinstance(featured_digest["featured"], list) else []
+    pills = "".join(f'<span class="pill">{tag}</span>' for tag in tags[:5])
+    source_count = f'{featured_digest["source_count"]} items' if featured_digest["source_count"] else "Digest"
+    lines.extend(
+        [
+            '<article class="digest-card digest-card-featured">',
+            '  <div class="digest-card-main">',
+            f'    <p class="meta">{featured_digest["date"].isoformat()} · {source_count}</p>',
+            f'    <h3><a href="{featured_digest["path"]}">{featured_digest["title"]}</a></h3>',
+            f'    <p class="digest-summary">{featured_digest["summary"]}</p>',
+            f'    <div class="pill-row">{pills}</div>' if pills else "",
+            "  </div>",
+            '  <div class="digest-card-side">',
+            '    <p class="section-kicker">Read first</p>',
+            f'    <p class="digest-side-copy">{", ".join(featured[:3])}</p>' if featured else '    <p class="digest-side-copy">Open the latest issue for the full research selection and executive summary.</p>',
+            f'    <a class="button tertiary digest-link" href="{featured_digest["path"]}">Read issue</a>',
+            "  </div>",
+            "</article>",
+        ]
+    )
+
+    remaining = digests[1:]
+    if remaining:
+        lines.append('<ul class="digest-list">')
+    for digest in remaining:
         tags = digest["tags"] if isinstance(digest["tags"], list) else []
         featured = digest["featured"] if isinstance(digest["featured"], list) else []
         pills = "".join(f'<span class="pill">{tag}</span>' for tag in tags[:5])
@@ -163,7 +193,8 @@ summary: Weekly archive of concise AI research digests.
                 "  </li>",
             ]
         )
-    lines.append("</ul>")
+    if remaining:
+        lines.append("</ul>")
     lines.append("</section>")
     lines.extend(
         [

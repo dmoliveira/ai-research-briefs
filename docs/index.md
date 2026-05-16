@@ -12,6 +12,10 @@ summary: Weekly archive of concise AI research digests.
         Weekly issues covering strong new work in AI, ML, LLMs, agents, recommender systems,
         and adjacent engineering research, shaped for applied builders rather than hype cycles.
       </p>
+      <div class="hero-actions">
+        <a class="button primary" href="2026/05/2026-05-16.html">Open latest brief</a>
+        <a class="button tertiary" href="rss.xml">RSS feed</a>
+      </div>
       <div class="metric-strip">
         <div class="stat-card">
           <span class="metric-label">Briefs</span>
@@ -49,15 +53,19 @@ summary: Weekly archive of concise AI research digests.
     Each issue is written as a dated briefing note: short enough to skim quickly, dense enough to be useful.
   </p>
 
-<ul class="digest-list">
-  <li class="digest-card">
+<article class="digest-card digest-card-featured">
+  <div class="digest-card-main">
     <p class="meta">2026-05-16 · 2 items</p>
     <h3><a href="2026/05/2026-05-16.html">AI Research Brief: 2026-05-16</a></h3>
     <p class="digest-summary">Initial sample digest structure for AI, ML, LLM, agent, and recommender research.</p>
-    <p class="digest-summary"><strong>Read first:</strong> Example: Adaptive Agent Planning for Long-Horizon Tasks, Example: Retrieval-Aware Preference Modeling</p>
     <div class="pill-row"><span class="pill">ai</span><span class="pill">ml</span><span class="pill">llm</span><span class="pill">agents</span><span class="pill">recommenders</span></div>
-  </li>
-</ul>
+  </div>
+  <div class="digest-card-side">
+    <p class="section-kicker">Read first</p>
+    <p class="digest-side-copy">Example: Adaptive Agent Planning for Long-Horizon Tasks, Example: Retrieval-Aware Preference Modeling</p>
+    <a class="button tertiary digest-link" href="2026/05/2026-05-16.html">Read issue</a>
+  </div>
+</article>
 </section>
 <section class="home-section">
   <div class="theme-grid">

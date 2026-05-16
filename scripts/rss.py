@@ -12,7 +12,7 @@ from generate_index import collect_digests
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-SITE_URL = os.environ.get("SITE_URL", "https://example.github.io/ai-research-briefs").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://dmoliveira.github.io/ai-research-briefs").rstrip("/")
 
 
 def build_rss() -> ET.Element:

@@ -1,0 +1,16 @@
+title: ai-research-briefs
+description: Concise AI research digests, published as a public archive.
+url: https://dmoliveira.github.io
+baseurl: /ai-research-briefs
+theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

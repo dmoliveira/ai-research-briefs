@@ -5,6 +5,7 @@ from __future__ import annotations
 import datetime as dt
 import pathlib
 import re
+from collections import Counter
 from typing import Any
 
 
@@ -77,24 +78,67 @@ def collect_digests() -> list[dict[str, Any]]:
 
 
 def render_index(digests: list[dict[str, Any]]) -> str:
-    header = """---
+    tag_counts = Counter()
+    archive_counts = Counter()
+    total_sources = 0
+    for digest in digests:
+        for tag in digest["tags"] if isinstance(digest["tags"], list) else []:
+            tag_counts[tag] += 1
+        archive_counts[digest["date"].strftime("%Y-%m")] += 1
+        source_value = str(digest["source_count"])
+        if source_value.isdigit():
+            total_sources += int(source_value)
+
+    header = f"""---
 title: Research Briefs
 summary: Weekly archive of concise AI research digests.
 ---
 
 <section class="hero">
-  <p class="meta">Public archive</p>
-  <h1>AI research briefs, organized for fast reading.</h1>
-  <p>
-    Weekly digests covering strong new work in AI, ML, LLMs, agents, recommender systems,
-    and adjacent engineering research.
-  </p>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="section-kicker">Public archive · editorial research digest</p>
+      <h1>AI research briefs, organized for fast reading.</h1>
+      <p>
+        Weekly issues covering strong new work in AI, ML, LLMs, agents, recommender systems,
+        and adjacent engineering research, shaped for applied builders rather than hype cycles.
+      </p>
+      <div class="metric-strip">
+        <div class="stat-card">
+          <span class="metric-label">Briefs</span>
+          <strong class="metric-value">{len(digests)}</strong>
+        </div>
+        <div class="stat-card">
+          <span class="metric-label">Indexed items</span>
+          <strong class="metric-value">{total_sources}</strong>
+        </div>
+        <div class="stat-card">
+          <span class="metric-label">Cadence</span>
+          <strong class="metric-value">Weekly</strong>
+        </div>
+      </div>
+    </div>
+    <aside class="hero-panel">
+      <p class="section-kicker">Method</p>
+      <h2>Concise by default.</h2>
+      <p>
+        Each issue groups related work by theme, flags stronger papers first, and keeps caveats
+        visible when source freshness or review status is weak.
+      </p>
+      <ul class="bullet-list">
+        <li>10-20 high-signal papers, articles, or technical notes</li>
+        <li>Theme-first structure for skimmability</li>
+        <li>Ratings, reading-time estimates, and practical takeaways</li>
+      </ul>
+    </aside>
+  </div>
 </section>
 
-## Latest Briefs
+<section class="home-section">
+  <h2>Latest Briefs</h2>
 """
     if not digests:
-        return header + "\n_No briefs published yet._\n"
+        return header + '\n<div class="home-empty">No briefs published yet.</div>\n</section>\n'
 
     lines = [header, '<ul class="digest-list">']
     for digest in digests:
@@ -117,6 +161,39 @@ summary: Weekly archive of concise AI research digests.
             ]
         )
     lines.append("</ul>")
+    lines.append("</section>")
+    lines.extend(
+        [
+            '<section class="home-section">',
+            '  <div class="theme-grid">',
+            '    <div class="theme-card">',
+            '      <p class="section-kicker">Active themes</p>',
+            '      <h2>What the archive tracks most.</h2>',
+            '      <div class="pill-row">',
+        ]
+    )
+    for tag, _count in tag_counts.most_common(8):
+        lines.append(f'        <span class="pill">{tag}</span>')
+    lines.extend(
+        [
+            "      </div>",
+            "    </div>",
+            '    <div class="theme-card">',
+            '      <p class="section-kicker">Archive rhythm</p>',
+            '      <h2>Published as a dated research ledger.</h2>',
+            '      <ul class="archive-list">',
+        ]
+    )
+    for month, count in sorted(archive_counts.items(), reverse=True)[:6]:
+        lines.append(f"        <li>{month}: {count} brief{'s' if count != 1 else ''}</li>")
+    lines.extend(
+        [
+            "      </ul>",
+            "    </div>",
+            "  </div>",
+            "</section>",
+        ]
+    )
     return "\n".join(line for line in lines if line != "")
 
 

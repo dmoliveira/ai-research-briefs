@@ -1,0 +1,44 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="640" fill="#F7F1E6"/>
+  <rect x="34" y="34" width="1212" height="572" rx="28" fill="#FBF8F1" stroke="#D9CFC0"/>
+  <circle cx="1134" cy="130" r="118" stroke="#D3B39C" stroke-width="1.2"/>
+  <circle cx="1134" cy="130" r="82" stroke="#E8D8C9" stroke-width="18"/>
+  <circle cx="1134" cy="130" r="44" stroke="#EFE5DA" stroke-width="20"/>
+  <path d="M162 130C222 96 302 80 402 80C487 80 557 92 612 116" stroke="#8F3518" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M162 164C238 134 318 120 402 120C500 120 586 138 654 172" stroke="#B27C5E" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M164 204H360" stroke="#D8C7B4" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M164 224H314" stroke="#E4D8C8" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="88" y="88" width="82" height="82" rx="41" fill="#FFFDF9" stroke="#C9B29E"/>
+  <circle cx="129" cy="129" r="28" stroke="#8F3518" stroke-width="1.5"/>
+  <path d="M129 102V156M102 129H156M111 111L147 147M147 111L111 147" stroke="#8F3518" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="113" cy="129" r="2.8" fill="#8F3518"/>
+  <circle cx="145" cy="113" r="2.8" fill="#8F3518"/>
+  <circle cx="141" cy="145" r="2.8" fill="#8F3518"/>
+  <text x="198" y="108" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="18" letter-spacing="4">AI·RB / EDITORIAL RESEARCH DIGEST</text>
+  <text x="198" y="176" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="76" letter-spacing="-3">AI research briefs,</text>
+  <text x="198" y="246" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="76" letter-spacing="-3">organized for fast reading.</text>
+  <text x="200" y="306" fill="#63594F" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="29">Public GitHub Pages archive for concise weekly briefs across AI, ML, LLMs, agents,</text>
+  <text x="200" y="342" fill="#63594F" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="29">recommender systems, and adjacent engineering research.</text>
+  <rect x="198" y="392" width="198" height="92" rx="20" fill="#FFFDF9" stroke="#D9CFC0"/>
+  <rect x="414" y="392" width="198" height="92" rx="20" fill="#FFFDF9" stroke="#D9CFC0"/>
+  <rect x="630" y="392" width="198" height="92" rx="20" fill="#FFFDF9" stroke="#D9CFC0"/>
+  <text x="222" y="424" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2.2">FORMAT</text>
+  <text x="222" y="462" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="33">Weekly archive</text>
+  <text x="438" y="424" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2.2">STYLE</text>
+  <text x="438" y="462" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="33">Theme-first briefs</text>
+  <text x="654" y="424" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2.2">AUTHOR</text>
+  <text x="654" y="462" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="33">Diego Marinho</text>
+  <rect x="860" y="274" width="306" height="126" rx="24" fill="#FFFDF9" stroke="#D9CFC0"/>
+  <text x="890" y="314" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2.2">IN EACH ISSUE</text>
+  <text x="890" y="350" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="29">Semantic grouping, ratings,</text>
+  <text x="890" y="384" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="29">reading priority, and takeaways.</text>
+  <rect x="860" y="430" width="144" height="112" rx="22" fill="#FFFDF9" stroke="#D9CFC0"/>
+  <rect x="1022" y="430" width="144" height="112" rx="22" fill="#FFFDF9" stroke="#D9CFC0"/>
+  <text x="886" y="466" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="1.8">RELATED</text>
+  <text x="886" y="500" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="24">top-uni</text>
+  <text x="886" y="526" fill="#63594F" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="16">Top CS / AI universities</text>
+  <text x="1048" y="466" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="1.8">RELATED</text>
+  <text x="1048" y="500" fill="#151311" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="24">master-philosophers</text>
+  <text x="1048" y="526" fill="#63594F" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="16">Deep study hub</text>
+  <text x="90" y="560" fill="#7A6557" font-family="JetBrains Mono, monospace" font-size="15" letter-spacing="2.2">github.com/dmoliveira / CV / LinkedIn / Support</text>
+</svg>

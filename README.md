@@ -1,56 +1,84 @@
 # ai-research-briefs
 
+![ai-research-briefs banner](docs/assets/readme-hero.svg)
+
+[![GitHub Pages](https://img.shields.io/badge/site-live_pages-111111)](https://dmoliveira.github.io/ai-research-briefs/)
+[![RSS Feed](https://img.shields.io/badge/feed-rss-b35a2a)](https://dmoliveira.github.io/ai-research-briefs/rss.xml)
+[![Workflow](https://img.shields.io/github/actions/workflow/status/dmoliveira/ai-research-briefs/publish.yml?label=publish)](https://github.com/dmoliveira/ai-research-briefs/actions/workflows/publish.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2e8b57.svg)](LICENSE)
+[![Made by Diego Marinho](https://img.shields.io/badge/author-Diego%20Marinho-8f3518)](https://dmoliveira.github.io/my-cv-public/cv/human/)
+[![Support](https://img.shields.io/badge/support-stripe-635bff?logo=stripe&logoColor=white)](https://buy.stripe.com/8x200i8bSgVe3Vl3g8bfO00)
+
 Public GitHub Pages archive for concise AI research digests.
 
-## What This Repository Does
+## ✦ What This Is
 
-- Publishes dated markdown digests under `docs/YYYY/MM/YYYY-MM-DD.md`
-- Generates a homepage index from digest metadata
-- Generates an RSS feed for new briefs
-- Stays simple enough for Codex automation to maintain
+`ai-research-briefs` publishes dated, skimmable research briefs covering:
 
-## Repository Layout
+- AI / ML
+- LLMs
+- AI agents
+- recommender systems
+- adjacent computer science and applied engineering research
+
+Each issue is designed to be fast to scan, easy to archive, and stable enough for automation.
+
+## 🔎 What Each Brief Includes
+
+- 10-20 important papers, journals, or technical articles when quality supports that count
+- semantic grouping by theme instead of one long flat list
+- concise summaries in plain language
+- relevance and quality ratings
+- estimated reading time
+- key results, conclusions, and a practical take
+- explicit caveats when freshness, review status, or evidence is weak
+
+## 🌐 Live Site
+
+- Site: [dmoliveira.github.io/ai-research-briefs](https://dmoliveira.github.io/ai-research-briefs/)
+- RSS: [dmoliveira.github.io/ai-research-briefs/rss.xml](https://dmoliveira.github.io/ai-research-briefs/rss.xml)
+
+## 🧭 Repository Layout
 
 ```text
 docs/
   _config.yml
   _layouts/default.html
-  assets/style.css
-  tags/.gitkeep
+  _includes/
+  assets/
+  tags/
   index.md
   rss.xml
-  2026/05/2026-05-16.md
+  YYYY/MM/YYYY-MM-DD.md
 scripts/
   generate_index.py
   rss.py
 .github/workflows/
   publish.yml
+automation-prompt.md
 ```
 
-## Content Model
+## ⚙️ How It Works
 
-Each digest file uses front matter like:
+1. A digest is written to `docs/YYYY/MM/YYYY-MM-DD.md`.
+2. `scripts/generate_index.py` rebuilds the homepage archive.
+3. `scripts/rss.py` rebuilds the feed.
+4. GitHub Actions publishes `docs/` through GitHub Pages.
 
-```yaml
----
-title: "AI Research Brief: 2026-05-16"
-date: 2026-05-16
-summary: "Top AI, ML, agent, and recommender research from the week."
-tags:
-  - ai
-  - ml
-  - llm
-  - agents
-  - recommenders
-featured:
-  - "Paper title"
-source_count: 12
----
-```
+## 🧠 Automation Shape
 
-The body is grouped by semantic theme and optimized for scanning.
+The Codex automation for this repository should:
 
-## Local Usage
+1. search credible sources from the previous 7 days
+2. select only strong, non-duplicate items
+3. write the dated digest file
+4. regenerate the homepage index
+5. regenerate RSS
+6. commit and push only if the result is meaningful
+
+The current Codex prompt is stored in [automation-prompt.md](automation-prompt.md).
+
+## 🧪 Local Commands
 
 Generate the homepage index:
 
@@ -64,16 +92,37 @@ Generate RSS:
 python3 scripts/rss.py
 ```
 
-## GitHub Pages
+Serve the site locally:
 
-This repository is designed for GitHub Pages deployment from a workflow. The workflow regenerates the index and RSS, then publishes the `docs/` directory.
+```bash
+python3 -m http.server 8000 -d docs
+```
 
-## Automation Shape
+## 👤 Author
 
-A Codex automation for this repo should:
+- GitHub: [Diego Marinho](https://github.com/dmoliveira)
+- CV: [dmoliveira.github.io/my-cv-public/cv/human](https://dmoliveira.github.io/my-cv-public/cv/human/)
+- LinkedIn: [linkedin.com/in/dmztheone](https://www.linkedin.com/in/dmztheone/)
 
-1. Find strong items from the previous 7 days.
-2. Create or update a digest file in `docs/YYYY/MM/YYYY-MM-DD.md`.
-3. Run `scripts/generate_index.py`.
-4. Run `scripts/rss.py`.
-5. Commit and push only if there is meaningful new content.
+## 🪄 Related Projects
+
+- [top-uni](https://github.com/dmoliveira/top-uni): top 200 universities for computer science, AI/ML, and data science
+- [master-philosophers](https://github.com/dmoliveira/master-philosophers): structured long-form learning hub for philosophy and reasoning
+
+These helped set the tone for:
+
+- quiet but high-signal presentation
+- GitHub Pages-first publishing
+- editorial structure with public archival value
+- support-friendly open project framing
+
+## 💛 Support
+
+If this project is useful, support helps keep the archive public and maintained:
+
+- Stripe support: [buy.stripe.com/8x200i8bSgVe3Vl3g8bfO00](https://buy.stripe.com/8x200i8bSgVe3Vl3g8bfO00)
+- You can also share the site, star the repo, or reference the briefs in your own reading workflow
+
+## 📄 License
+
+MIT.

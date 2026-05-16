@@ -2,6 +2,17 @@ title: ai-research-briefs
 description: Concise AI research digests, published as a public archive.
 url: https://dmoliveira.github.io
 baseurl: /ai-research-briefs
+author:
+  name: Diego Marinho
+  github: https://github.com/dmoliveira
+  linkedin: https://www.linkedin.com/in/dmztheone/
+  cv: https://dmoliveira.github.io/my-cv-public/cv/human/
+support_url: https://buy.stripe.com/8x200i8bSgVe3Vl3g8bfO00
+related_projects:
+  - name: top-uni
+    url: https://github.com/dmoliveira/top-uni
+  - name: master-philosophers
+    url: https://github.com/dmoliveira/master-philosophers
 theme: null
 markdown: kramdown
 kramdown:

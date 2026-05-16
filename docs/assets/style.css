@@ -183,6 +183,16 @@ a:hover {
   max-width: var(--content-width);
 }
 
+.page-intro {
+  padding-bottom: 10px;
+}
+
+.page-summary {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 62ch;
+}
+
 .content > .hero,
 .content > .brief-grid,
 .content > .home-section,

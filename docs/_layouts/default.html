@@ -48,6 +48,15 @@
         </div>
       </header>
       <main class="content">
+        {% unless page.url == "/" %}
+          <section class="page-intro">
+            <p class="section-kicker">Research brief{% if page.date %} · {{ page.date | date: "%Y-%m-%d" }}{% endif %}</p>
+            <h1>{{ page.title }}</h1>
+            {% if page.summary %}
+              <p class="page-summary">{{ page.summary }}</p>
+            {% endif %}
+          </section>
+        {% endunless %}
         {{ content }}
       </main>
       <footer class="site-footer">

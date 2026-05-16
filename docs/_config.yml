@@ -10,9 +10,13 @@ author:
 support_url: https://buy.stripe.com/8x200i8bSgVe3Vl3g8bfO00
 related_projects:
   - name: top-uni
-    url: https://github.com/dmoliveira/top-uni
+    url: https://dmoliveira.github.io/top-uni/
+    description: Curated rankings and research context for top CS, AI/ML, and data science universities.
+    icon: academia
   - name: master-philosophers
-    url: https://github.com/dmoliveira/master-philosophers
+    url: https://dmoliveira.github.io/master-philosophers/
+    description: Long-form study hub for foundational thinkers, reading paths, and structured learning.
+    icon: philosopher
 theme: null
 markdown: kramdown
 kramdown:

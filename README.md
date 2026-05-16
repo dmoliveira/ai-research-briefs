@@ -125,8 +125,8 @@ python3 -m http.server 8000 -d docs
 
 ## 🪄 Related Projects
 
-- [top-uni](https://github.com/dmoliveira/top-uni): top 200 universities for computer science, AI/ML, and data science
-- [master-philosophers](https://github.com/dmoliveira/master-philosophers): structured long-form learning hub for philosophy and reasoning
+- [top-uni](https://dmoliveira.github.io/top-uni/): top 200 universities for computer science, AI/ML, and data science
+- [master-philosophers](https://dmoliveira.github.io/master-philosophers/): structured long-form learning hub for philosophy and reasoning
 
 These helped set the tone for:
 

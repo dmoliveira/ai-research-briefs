@@ -255,7 +255,7 @@ a:hover {
 }
 
 .hero-grid {
-  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.88fr);
+  grid-template-columns: minmax(0, 1.82fr) minmax(265px, 0.8fr);
   align-items: stretch;
 }
 
@@ -308,6 +308,10 @@ a:hover {
   align-self: start;
 }
 
+.hero-panel ul {
+  margin-bottom: 0;
+}
+
 .hero-panel h2,
 .footer-card h2 {
   margin-top: 0;
@@ -348,7 +352,7 @@ a:hover {
   font-size: 1.65rem;
   line-height: 1.1;
   letter-spacing: -0.04em;
-  margin-top: 1.9em;
+  margin-top: 1.5em;
 }
 
 .content h3 {
@@ -380,8 +384,8 @@ a:hover {
 
 .digest-card-featured {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(220px, 0.72fr);
-  gap: 18px;
+  grid-template-columns: minmax(0, 1.78fr) minmax(210px, 0.62fr);
+  gap: 14px;
   align-items: start;
   border-left-width: 4px;
 }
@@ -392,13 +396,14 @@ a:hover {
 }
 
 .digest-card-side {
-  padding-left: 4px;
+  padding-left: 2px;
   border-left: 1px solid rgba(22, 20, 18, 0.08);
 }
 
 .digest-side-copy {
   color: var(--muted);
-  margin: 0.2rem 0 0.9rem;
+  margin: 0.15rem 0 0.75rem;
+  font-size: 0.98rem;
 }
 
 .digest-link {
@@ -451,13 +456,18 @@ a:hover {
 .theme-card,
 .archive-card,
 .footer-card {
-  padding: 20px 22px;
+  padding: 18px 20px;
 }
 
 .theme-card h2,
 .archive-card h2,
 .footer-card h2 {
   margin-bottom: 0.55rem;
+}
+
+.theme-card h2,
+.archive-card h2 {
+  font-size: 1.18rem;
 }
 
 .theme-card p,
@@ -514,6 +524,15 @@ a:hover {
 
 .footer-grid {
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.15fr);
+}
+
+.footer-card h2 {
+  font-size: 1.06rem;
+  letter-spacing: -0.03em;
+}
+
+.footer-card p {
+  font-size: 0.98rem;
 }
 
 .button.secondary {

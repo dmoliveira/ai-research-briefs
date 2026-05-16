@@ -200,13 +200,36 @@ a:hover {
 }
 
 .page-intro {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 .page-summary {
   color: var(--muted);
   font-size: 1.1rem;
   max-width: 62ch;
+}
+
+.page-meta-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+.intro-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.intro-pill-strong {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .content > .hero,
@@ -216,6 +239,12 @@ a:hover {
 .content > .archive-grid,
 .content > .theme-grid {
   max-width: none;
+}
+
+.content > .page-intro,
+.content > .note-block,
+.content > .brief-callout {
+  max-width: var(--content-width);
 }
 
 .hero {
@@ -551,11 +580,41 @@ a:hover {
   font-size: 1.02rem;
 }
 
+.content ol {
+  padding-left: 1.4rem;
+}
+
+.content ol li + li,
+.content ul li + li {
+  margin-top: 0.28rem;
+}
+
 .content blockquote {
   margin: 1.4rem 0;
   padding: 1rem 1.1rem;
   border-left: 3px solid var(--accent);
   background: rgba(255, 255, 255, 0.42);
+}
+
+.brief-callout {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.1rem 0 1.6rem;
+}
+
+.brief-callout .note-block {
+  margin: 0;
+}
+
+.note-block {
+  padding: 16px 18px;
+}
+
+.note-block p,
+.note-block ul,
+.note-block ol {
+  margin-bottom: 0;
 }
 
 .content hr {
@@ -607,6 +666,10 @@ a:hover {
   .archive-grid,
   .theme-grid,
   .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brief-callout {
     grid-template-columns: 1fr;
   }
 

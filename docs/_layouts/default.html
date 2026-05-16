@@ -55,6 +55,16 @@
             {% if page.summary %}
               <p class="page-summary">{{ page.summary }}</p>
             {% endif %}
+            {% if page.source_count or page.tags %}
+              <div class="page-meta-row">
+                {% if page.source_count %}
+                  <span class="intro-pill intro-pill-strong">{{ page.source_count }} indexed items</span>
+                {% endif %}
+                {% for tag in page.tags limit: 5 %}
+                  <span class="intro-pill">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
           </section>
         {% endunless %}
         {{ content }}

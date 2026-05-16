@@ -23,6 +23,13 @@ Public GitHub Pages archive for concise AI research digests.
 
 Each issue is designed to be fast to scan, easy to archive, and stable enough for automation.
 
+## ⏱ Publishing Rhythm
+
+- Monday, Wednesday, and Friday
+- concise, theme-grouped issues
+- public archive with RSS output
+- quality-first selection over filler volume
+
 ## 🔎 What Each Brief Includes
 
 - 10-20 important papers, journals, or technical articles when quality supports that count
@@ -37,6 +44,7 @@ Each issue is designed to be fast to scan, easy to archive, and stable enough fo
 
 - Site: [dmoliveira.github.io/ai-research-briefs](https://dmoliveira.github.io/ai-research-briefs/)
 - RSS: [dmoliveira.github.io/ai-research-briefs/rss.xml](https://dmoliveira.github.io/ai-research-briefs/rss.xml)
+- Latest brief: [2026-05-16 issue](https://dmoliveira.github.io/ai-research-briefs/2026/05/2026-05-16.html)
 
 ## 🧭 Repository Layout
 
@@ -64,6 +72,17 @@ automation-prompt.md
 2. `scripts/generate_index.py` rebuilds the homepage archive.
 3. `scripts/rss.py` rebuilds the feed.
 4. GitHub Actions publishes `docs/` through GitHub Pages.
+
+## 🗂 Site Structure
+
+The site is organized as a dashboard-editorial archive:
+
+- a top-level research homepage
+- a latest-brief feature surface
+- featured papers from the newest issue
+- theme exploration cards
+- a recent-briefs ledger
+- full brief pages with summary, trends, ranked reads, and structured paper cards
 
 ## 🧠 Automation Shape
 

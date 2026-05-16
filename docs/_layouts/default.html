@@ -48,6 +48,10 @@
         </div>
       </header>
       <main class="content">
+        <section class="top-note top-note-shell">
+          <p>✧ Independent. Lightweight. Unbiased.</p>
+          <p>Updated weekly rhythm · Every Mon · Wed · Fri</p>
+        </section>
         {% unless page.url == "/" %}
           <section class="page-intro">
             <p class="section-kicker">Research brief{% if page.date %} · {{ page.date | date: "%Y-%m-%d" }}{% endif %}</p>
@@ -55,6 +59,18 @@
             {% if page.summary %}
               <p class="page-summary">{{ page.summary }}</p>
             {% endif %}
+            <div class="issue-overview">
+              {% if page.date %}
+                <span class="overview-chip">{{ page.date | date: "%Y-%m-%d" }}</span>
+              {% endif %}
+              {% if page.source_count %}
+                <span class="overview-chip">{{ page.source_count }} indexed items</span>
+              {% endif %}
+              <span class="overview-chip">Window: prior 7 days</span>
+              {% if page.tags %}
+                <span class="overview-chip overview-chip-soft">Theme-first issue</span>
+              {% endif %}
+            </div>
             {% if page.source_count or page.tags %}
               <div class="page-meta-row">
                 {% if page.source_count %}

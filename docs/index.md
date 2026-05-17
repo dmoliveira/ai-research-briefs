@@ -69,6 +69,7 @@ summary: Public archive of concise AI research digests.
     </article>
     <aside class="feature-panel">
       <p class="section-kicker">Featured papers</p>
+      <p class="feature-panel-intro">Ranked from the latest issue for fastest triage.</p>
       <ol class="featured-paper-list">
         <li><span class="featured-rank">1</span><span>SkillCraft: Can LLM Agents learn to use tools skillfully?</span></li>
         <li><span class="featured-rank">2</span><span>Agent-BRACE: Decoupling Beliefs from Actions in Long-Horizon Tasks via Verbalized State Uncertainty</span></li>
@@ -141,7 +142,7 @@ summary: Public archive of concise AI research digests.
       <span class="archive-date">2026-05-16</span>
       <span class="archive-count">6</span>
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation, Privacy & Safety</span></span>
-      <a class="archive-open" href="2026/05/2026-05-16.html" aria-label="Open AI Research Brief: 2026-05-16">→</a>
+      <a class="archive-open" href="2026/05/2026-05-16.html" aria-label="Open AI Research Brief: 2026-05-16">Open</a>
     </article>
   <p class="archive-note">This archive is live and will fill out automatically as the Mon · Wed · Fri pipeline publishes new briefs.</p>
   </div>

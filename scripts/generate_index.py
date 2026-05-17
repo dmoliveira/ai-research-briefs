@@ -212,6 +212,7 @@ summary: Public archive of concise AI research digests.
             '    </article>',
             '    <aside class="feature-panel">',
             '      <p class="section-kicker">Featured papers</p>',
+            '      <p class="feature-panel-intro">Ranked from the latest issue for fastest triage.</p>',
             '      <ol class="featured-paper-list">',
         ]
     )
@@ -286,7 +287,7 @@ summary: Public archive of concise AI research digests.
                 f'      <span class="archive-date">{digest["date"].isoformat()}</span>',
                 f'      <span class="archive-count">{digest["source_count"]}</span>',
                 f'      <span class="archive-themes"><span class="theme-dot-row">{theme_pills}</span><span class="archive-theme-labels">{theme_labels}</span></span>',
-                f'      <a class="archive-open" href="{digest["path"]}" aria-label="Open {digest["title"]}">→</a>',
+                f'      <a class="archive-open" href="{digest["path"]}" aria-label="Open {digest["title"]}">Open</a>',
                 '    </article>',
             ]
         )

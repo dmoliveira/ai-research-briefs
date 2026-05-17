@@ -433,6 +433,9 @@ a:hover {
 .discovery-card,
 .feature-panel {
   min-width: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .latest-brief-card h3,
@@ -479,6 +482,10 @@ a:hover {
   text-decoration: none;
 }
 
+.text-link:hover {
+  color: var(--accent-strong);
+}
+
 .text-link::after {
   content: "→";
 }
@@ -487,6 +494,12 @@ a:hover {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.18)),
     var(--panel);
+}
+
+.feature-panel-intro {
+  margin: 0.15rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.96rem;
 }
 
 .featured-paper-list {
@@ -502,6 +515,7 @@ a:hover {
   grid-template-columns: 30px 1fr;
   gap: 10px;
   align-items: start;
+  line-height: 1.45;
 }
 
 .featured-rank {
@@ -530,6 +544,10 @@ a:hover {
   margin-top: 0.9rem;
   font-size: 0.95rem;
   color: var(--ink);
+}
+
+.theme-tile p {
+  min-height: 4.4rem;
 }
 
 .archive-ledger {
@@ -603,8 +621,24 @@ a:hover {
 
 .archive-open {
   justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(178, 74, 31, 0.18);
+  background: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 0.82rem;
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.archive-ledger-row:hover .archive-open {
+  background: rgba(255, 255, 255, 0.84);
+  border-color: rgba(178, 74, 31, 0.26);
 }
 
 .page-intro {
@@ -673,6 +707,12 @@ a:hover {
 .brief-jump-nav {
   margin: 1.2rem 0 1.7rem;
   padding-bottom: 0.2rem;
+  position: sticky;
+  top: 82px;
+  z-index: 4;
+  padding-top: 0.4rem;
+  background: linear-gradient(180deg, rgba(246, 239, 226, 0.96), rgba(246, 239, 226, 0.78));
+  backdrop-filter: blur(10px);
 }
 
 .brief-jump-nav a:hover {
@@ -708,6 +748,10 @@ a:hover {
 
 .caveat-card {
   margin-top: 0.9rem;
+  border-left: 3px solid rgba(178, 74, 31, 0.46);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.2)),
+    var(--panel);
 }
 
 .brief-priority-card,
@@ -950,6 +994,13 @@ a:hover {
 
   .archive-open {
     justify-self: start;
+  }
+
+  .brief-jump-nav {
+    position: static;
+    background: transparent;
+    backdrop-filter: none;
+    padding-top: 0;
   }
 
   .theme-dot-row {

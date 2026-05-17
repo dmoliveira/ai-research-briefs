@@ -504,6 +504,27 @@ button:focus-visible,
   margin: 0;
 }
 
+.page-breadcrumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 0.65rem;
+  color: var(--muted);
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-breadcrumbs a:hover {
+  color: var(--accent);
+}
+
 .discovery-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
@@ -521,6 +542,20 @@ button:focus-visible,
 .latest-brief-card {
   position: relative;
   overflow: hidden;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(178, 74, 31, 0.12);
+  color: var(--accent);
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .latest-brief-card::before,
@@ -754,6 +789,12 @@ button:focus-visible,
 
 .archive-ledger-row {
   transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+.archive-ledger-row-latest {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.14)),
+    rgba(178, 74, 31, 0.03);
 }
 
 .archive-date,

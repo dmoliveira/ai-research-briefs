@@ -58,6 +58,15 @@
         </section>
         {% unless page.url == "/" %}
           <section class="page-intro">
+            <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+              <a href="{{ '/' | relative_url }}">Home</a>
+              <span>/</span>
+              <a href="{{ '/#recent-briefs' | relative_url }}">Archive</a>
+              {% if page.date %}
+                <span>/</span>
+                <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+              {% endif %}
+            </nav>
             <p class="section-kicker">Research brief{% if page.date %} · {{ page.date | date: "%Y-%m-%d" }}{% endif %}</p>
             <h1>{{ page.title }}</h1>
             {% if page.summary %}

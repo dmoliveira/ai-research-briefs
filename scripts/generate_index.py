@@ -204,6 +204,7 @@ summary: Public archive of concise AI research digests.
             '  </div>',
             '  <div class="discovery-grid">',
             '    <article class="discovery-card latest-brief-card">',
+            '      <span class="card-badge">Current issue</span>',
             f'      <p class="meta">{featured_digest["date"].isoformat()} · {source_count}</p>',
             f'      <h3><a href="{featured_digest["path"]}">{featured_digest["title"]}</a></h3>',
             f'      <p class="digest-summary">{featured_digest["summary"]}</p>',
@@ -285,7 +286,7 @@ summary: Public archive of concise AI research digests.
             '    </div>',
         ]
     )
-    for digest in digests[:8]:
+    for position, digest in enumerate(digests[:8]):
         digest_tags = normalized_tags(digest)
         theme_pills = "".join(
             f'<span class="theme-dot" title="{tag_meta(tag)["label"]}">{tag_meta(tag)["icon"]}</span>'
@@ -294,7 +295,7 @@ summary: Public archive of concise AI research digests.
         theme_labels = ", ".join(tag_meta(tag)["label"] for tag in digest_tags[:5])
         lines.extend(
             [
-                '    <article class="archive-ledger-row">',
+                f'    <article class="archive-ledger-row{" archive-ledger-row-latest" if position == 0 else ""}">',
                 f'      <span class="archive-date">{digest["date"].isoformat()}</span>',
                 f'      <span class="archive-count">{digest["source_count"]} items</span>',
                 f'      <span class="archive-themes"><span class="theme-dot-row">{theme_pills}</span><span class="archive-theme-labels">{theme_labels}</span></span>',

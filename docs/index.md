@@ -61,6 +61,7 @@ summary: Public archive of concise AI research digests.
   </div>
   <div class="discovery-grid">
     <article class="discovery-card latest-brief-card">
+      <span class="card-badge">Current issue</span>
       <p class="meta">2026-05-16 · 6 papers</p>
       <h3><a href="2026/05/2026-05-16.html">AI Research Brief: 2026-05-16</a></h3>
       <p class="digest-summary">First verified issue covering recent agent, multimodal, interaction, and privacy research and technical releases published or updated between May 6 and May 15, 2026.</p>
@@ -149,7 +150,7 @@ summary: Public archive of concise AI research digests.
       <span>Themes</span>
       <span></span>
     </div>
-    <article class="archive-ledger-row">
+    <article class="archive-ledger-row archive-ledger-row-latest">
       <span class="archive-date">2026-05-16</span>
       <span class="archive-count">6 items</span>
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation, Privacy & Safety</span></span>

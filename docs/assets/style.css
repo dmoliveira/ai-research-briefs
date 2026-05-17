@@ -868,6 +868,20 @@ a:hover {
   margin: 1rem 0 1.55rem;
 }
 
+.brief-callout-intro {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.35rem;
+}
+
+.brief-jump-label {
+  margin: 0 0 0.45rem;
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .note-block p,
 .note-block ul,
 .note-block ol {
@@ -921,13 +935,18 @@ a:hover {
   border: 1px solid rgba(22, 20, 18, 0.08);
 }
 
+.entry-meta-item span:last-child {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
 .entry-meta-label {
   display: block;
   margin-bottom: 0.25rem;
 }
 
 .entry-section-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .entry-section {
@@ -1050,6 +1069,11 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
+  .brief-callout-intro,
+  .entry-section-grid {
+    grid-template-columns: 1fr;
+  }
+
   .theme-tile-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1126,7 +1150,8 @@ a:hover {
 
   .metrics-ribbon,
   .theme-tile-grid,
-  .entry-meta-grid {
+  .entry-meta-grid,
+  .entry-section-grid {
     grid-template-columns: 1fr;
   }
 

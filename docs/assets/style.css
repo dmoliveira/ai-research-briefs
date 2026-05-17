@@ -229,9 +229,28 @@ a:hover {
   border-bottom: 1px solid rgba(22, 20, 18, 0.08);
 }
 
+.top-note-mark {
+  color: var(--accent);
+}
+
 .top-note p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+.top-note-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.top-note-links a {
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .top-note-shell {
@@ -438,6 +457,23 @@ a:hover {
   flex-direction: column;
 }
 
+.latest-brief-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-brief-card::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  bottom: -34px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(178, 74, 31, 0.08), transparent 68%);
+  pointer-events: none;
+}
+
 .latest-brief-card h3,
 .theme-tile h3,
 .entry-card h3 {
@@ -453,6 +489,24 @@ a:hover {
 .archive-theme-labels,
 .theme-tile p {
   color: var(--muted);
+}
+
+.digest-meta-cluster {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 0.95rem;
+}
+
+.digest-meta-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 20, 18, 0.08);
+  background: rgba(255, 255, 255, 0.54);
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
 .pill-row {
@@ -539,6 +593,31 @@ a:hover {
   min-height: 100%;
 }
 
+.theme-tile[data-theme="agents"] .theme-tile-icon {
+  background: rgba(55, 118, 153, 0.12);
+  color: #245d7a;
+}
+
+.theme-tile[data-theme="llm"] .theme-tile-icon {
+  background: rgba(111, 88, 171, 0.12);
+  color: #5e479f;
+}
+
+.theme-tile[data-theme="multimodal"] .theme-tile-icon {
+  background: rgba(59, 108, 191, 0.12);
+  color: #335fb0;
+}
+
+.theme-tile[data-theme="evaluation"] .theme-tile-icon {
+  background: rgba(180, 102, 46, 0.12);
+  color: #9e5627;
+}
+
+.theme-tile[data-theme="privacy"] .theme-tile-icon {
+  background: rgba(161, 74, 64, 0.12);
+  color: #8e4139;
+}
+
 .theme-tile strong {
   display: block;
   margin-top: 0.9rem;
@@ -555,6 +634,19 @@ a:hover {
   overflow: hidden;
 }
 
+.archive-status-note {
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border: 1px solid rgba(22, 20, 18, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--muted);
+}
+
+.archive-status-note p {
+  margin: 0;
+}
+
 .archive-note {
   margin: 0;
   padding: 14px 18px 18px;
@@ -566,7 +658,7 @@ a:hover {
 .archive-ledger-head,
 .archive-ledger-row {
   display: grid;
-  grid-template-columns: 140px 80px minmax(0, 1fr) 32px;
+  grid-template-columns: 140px 92px minmax(0, 1fr) 112px;
   gap: 14px;
   align-items: center;
   padding: 14px 18px;
@@ -624,7 +716,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 54px;
+  min-width: 94px;
   padding: 7px 10px;
   border-radius: 999px;
   border: 1px solid rgba(178, 74, 31, 0.18);
@@ -826,17 +918,27 @@ a:hover {
 }
 
 .site-footer {
-  margin-top: 44px;
-  padding-top: 22px;
+  margin-top: 46px;
+  padding-top: 26px;
   border-top: 1px solid var(--line);
 }
 
 .footer-grid {
-  grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(0, 0.82fr) minmax(280px, 0.92fr) minmax(0, 1.08fr);
 }
 
 .footer-card {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.footer-card-subtle {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.28)),
+    var(--panel);
+}
+
+.footer-card-projects .project-list {
+  margin-top: 0.2rem;
 }
 
 .project-list {
@@ -921,7 +1023,7 @@ a:hover {
 
   .archive-ledger-head,
   .archive-ledger-row {
-    grid-template-columns: 112px 70px minmax(0, 1fr) 28px;
+    grid-template-columns: 112px 82px minmax(0, 1fr) 104px;
   }
 
   .masthead {
@@ -959,6 +1061,10 @@ a:hover {
     align-items: flex-start;
   }
 
+  .top-note-links {
+    gap: 10px;
+  }
+
   .hero {
     padding: 20px;
     border-radius: 22px;
@@ -994,6 +1100,7 @@ a:hover {
 
   .archive-open {
     justify-self: start;
+    min-width: 0;
   }
 
   .brief-jump-nav {

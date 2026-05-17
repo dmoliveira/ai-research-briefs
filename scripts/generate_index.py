@@ -207,6 +207,11 @@ summary: Public archive of concise AI research digests.
             f'      <p class="meta">{featured_digest["date"].isoformat()} · {source_count}</p>',
             f'      <h3><a href="{featured_digest["path"]}">{featured_digest["title"]}</a></h3>',
             f'      <p class="digest-summary">{featured_digest["summary"]}</p>',
+            '      <div class="digest-meta-cluster">',
+            f'        <span class="digest-meta-chip">{featured_digest["date"].strftime("%b %d, %Y")}</span>',
+            f'        <span class="digest-meta-chip">{source_count}</span>',
+            '        <span class="digest-meta-chip">Verified window</span>',
+            '      </div>',
             f'      <div class="pill-row">{pills}</div>' if pills else "",
             f'      <a class="text-link" href="{featured_digest["path"]}">Read full brief</a>',
             '    </article>',
@@ -245,7 +250,7 @@ summary: Public archive of concise AI research digests.
         meta = tag_meta(tag)
         lines.extend(
             [
-                '    <article class="theme-tile">',
+                f'    <article class="theme-tile" data-theme="{tag}">',
                 f'      <span class="theme-tile-icon">{meta["icon"]}</span>',
                 f'      <p class="section-kicker">{meta["label"]}</p>',
                 f'      <h3>{meta["label"]}</h3>',
@@ -264,6 +269,9 @@ summary: Public archive of concise AI research digests.
             '      <h2>Recent Briefs</h2>',
             '      <p class="home-section-intro">Browse the most recent issues as a dated research ledger.</p>',
             '    </div>',
+            '  </div>',
+            '  <div class="archive-status-note">',
+            '    <p><strong>Publishing rhythm:</strong> the Codex pipeline scans on Monday, Wednesday, and Friday mornings in Melbourne time and only posts when the issue clears the quality bar.</p>',
             '  </div>',
             '  <div class="archive-ledger">',
             '    <div class="archive-ledger-head">',
@@ -285,9 +293,9 @@ summary: Public archive of concise AI research digests.
             [
                 '    <article class="archive-ledger-row">',
                 f'      <span class="archive-date">{digest["date"].isoformat()}</span>',
-                f'      <span class="archive-count">{digest["source_count"]}</span>',
+                f'      <span class="archive-count">{digest["source_count"]} items</span>',
                 f'      <span class="archive-themes"><span class="theme-dot-row">{theme_pills}</span><span class="archive-theme-labels">{theme_labels}</span></span>',
-                f'      <a class="archive-open" href="{digest["path"]}" aria-label="Open {digest["title"]}">Open</a>',
+                f'      <a class="archive-open" href="{digest["path"]}" aria-label="Open {digest["title"]}">Open issue</a>',
                 '    </article>',
             ]
         )

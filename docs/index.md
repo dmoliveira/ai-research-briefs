@@ -64,6 +64,11 @@ summary: Public archive of concise AI research digests.
       <p class="meta">2026-05-16 · 6 papers</p>
       <h3><a href="2026/05/2026-05-16.html">AI Research Brief: 2026-05-16</a></h3>
       <p class="digest-summary">First verified issue covering recent agent, multimodal, interaction, and privacy research and technical releases published or updated between May 6 and May 15, 2026.</p>
+      <div class="digest-meta-cluster">
+        <span class="digest-meta-chip">May 16, 2026</span>
+        <span class="digest-meta-chip">6 papers</span>
+        <span class="digest-meta-chip">Verified window</span>
+      </div>
       <div class="pill-row"><span class="pill">agents</span><span class="pill">llm</span><span class="pill">multimodal</span><span class="pill">evaluation</span><span class="pill">privacy</span></div>
       <a class="text-link" href="2026/05/2026-05-16.html">Read full brief</a>
     </article>
@@ -87,35 +92,35 @@ summary: Public archive of concise AI research digests.
     </div>
   </div>
   <div class="theme-tile-grid">
-    <article class="theme-tile">
+    <article class="theme-tile" data-theme="agents">
       <span class="theme-tile-icon">◎</span>
       <p class="section-kicker">Agents</p>
       <h3>Agents</h3>
       <p>Planning, tool use, memory, and multi-step reasoning.</p>
       <strong>Current focus</strong>
     </article>
-    <article class="theme-tile">
+    <article class="theme-tile" data-theme="llm">
       <span class="theme-tile-icon">◌</span>
       <p class="section-kicker">LLM</p>
       <h3>LLM</h3>
       <p>Model capabilities, alignment, and reasoning.</p>
       <strong>Current focus</strong>
     </article>
-    <article class="theme-tile">
+    <article class="theme-tile" data-theme="multimodal">
       <span class="theme-tile-icon">◍</span>
       <p class="section-kicker">Multimodal</p>
       <h3>Multimodal</h3>
       <p>Vision, audio, and cross-modal understanding.</p>
       <strong>Current focus</strong>
     </article>
-    <article class="theme-tile">
+    <article class="theme-tile" data-theme="evaluation">
       <span class="theme-tile-icon">◇</span>
       <p class="section-kicker">Evaluation</p>
       <h3>Evaluation</h3>
       <p>Benchmarks, metrics, and robustness.</p>
       <strong>Current focus</strong>
     </article>
-    <article class="theme-tile">
+    <article class="theme-tile" data-theme="privacy">
       <span class="theme-tile-icon">◈</span>
       <p class="section-kicker">Privacy & Safety</p>
       <h3>Privacy & Safety</h3>
@@ -131,6 +136,9 @@ summary: Public archive of concise AI research digests.
       <p class="home-section-intro">Browse the most recent issues as a dated research ledger.</p>
     </div>
   </div>
+  <div class="archive-status-note">
+    <p><strong>Publishing rhythm:</strong> the Codex pipeline scans on Monday, Wednesday, and Friday mornings in Melbourne time and only posts when the issue clears the quality bar.</p>
+  </div>
   <div class="archive-ledger">
     <div class="archive-ledger-head">
       <span>Date</span>
@@ -140,9 +148,9 @@ summary: Public archive of concise AI research digests.
     </div>
     <article class="archive-ledger-row">
       <span class="archive-date">2026-05-16</span>
-      <span class="archive-count">6</span>
+      <span class="archive-count">6 items</span>
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation, Privacy & Safety</span></span>
-      <a class="archive-open" href="2026/05/2026-05-16.html" aria-label="Open AI Research Brief: 2026-05-16">Open</a>
+      <a class="archive-open" href="2026/05/2026-05-16.html" aria-label="Open AI Research Brief: 2026-05-16">Open issue</a>
     </article>
   <p class="archive-note">This archive is live and will fill out automatically as the Mon · Wed · Fri pipeline publishes new briefs.</p>
   </div>

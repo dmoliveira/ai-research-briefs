@@ -436,6 +436,27 @@ a:hover {
   margin-bottom: 14px;
 }
 
+.section-heading-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.section-heading-link::after {
+  content: "→";
+}
+
+.section-heading-link:hover {
+  color: var(--accent);
+}
+
 .home-section-intro,
 .page-summary {
   color: var(--muted);
@@ -460,6 +481,18 @@ a:hover {
 .latest-brief-card {
   position: relative;
   overflow: hidden;
+}
+
+.latest-brief-card::before,
+.feature-panel::before,
+.entry-card::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(178, 74, 31, 0.36), rgba(178, 74, 31, 0));
 }
 
 .latest-brief-card::after {
@@ -545,6 +578,7 @@ a:hover {
 }
 
 .feature-panel {
+  position: relative;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.18)),
     var(--panel);
@@ -647,12 +681,9 @@ a:hover {
   margin: 0;
 }
 
-.archive-note {
-  margin: 0;
-  padding: 14px 18px 18px;
-  color: var(--muted);
-  border-top: 1px solid rgba(22, 20, 18, 0.08);
-  background: rgba(255, 255, 255, 0.24);
+.archive-status-subtle {
+  margin-top: 0.32rem;
+  font-size: 0.94rem;
 }
 
 .archive-ledger-head,
@@ -683,6 +714,11 @@ a:hover {
 
 .archive-ledger-row {
   transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+.archive-date,
+.archive-count {
+  font-variant-numeric: tabular-nums;
 }
 
 .archive-themes {
@@ -855,6 +891,7 @@ a:hover {
 }
 
 .entry-card {
+  position: relative;
   padding: 20px 20px 18px;
   margin: 1rem 0 1.35rem;
   background:
@@ -1059,6 +1096,11 @@ a:hover {
   .top-note {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .top-note-links {

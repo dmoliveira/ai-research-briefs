@@ -90,6 +90,7 @@ summary: Public archive of concise AI research digests.
       <h2>Explore by Theme</h2>
       <p class="home-section-intro">Jump into the topics shaping AI research this week.</p>
     </div>
+    <a class="section-heading-link" href="2026/05/2026-05-16.html">From latest issue</a>
   </div>
   <div class="theme-tile-grid">
     <article class="theme-tile" data-theme="agents">
@@ -135,9 +136,11 @@ summary: Public archive of concise AI research digests.
       <h2>Recent Briefs</h2>
       <p class="home-section-intro">Browse the most recent issues as a dated research ledger.</p>
     </div>
+    <a class="section-heading-link" href="rss.xml">Follow via RSS</a>
   </div>
   <div class="archive-status-note">
     <p><strong>Publishing rhythm:</strong> the Codex pipeline scans on Monday, Wednesday, and Friday mornings in Melbourne time and only posts when the issue clears the quality bar.</p>
+    <p class="archive-status-subtle">Every brief is meant to read like a durable research ledger entry rather than a feed item.</p>
   </div>
   <div class="archive-ledger">
     <div class="archive-ledger-head">
@@ -152,6 +155,5 @@ summary: Public archive of concise AI research digests.
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation, Privacy & Safety</span></span>
       <a class="archive-open" href="2026/05/2026-05-16.html" aria-label="Open AI Research Brief: 2026-05-16">Open issue</a>
     </article>
-  <p class="archive-note">This archive is live and will fill out automatically as the Mon · Wed · Fri pipeline publishes new briefs.</p>
   </div>
 </section>

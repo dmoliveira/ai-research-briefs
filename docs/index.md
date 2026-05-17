@@ -13,7 +13,7 @@ summary: Public archive of concise AI research digests.
         and adjacent engineering research, shaped for applied builders rather than hype cycles.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="2026/05/2026-05-16.html">Open latest brief</a>
+        <a class="button primary" href="2026/05/2026-05-18.html">Open latest brief</a>
         <a class="button tertiary" href="#recent-briefs">Explore archive</a>
       </div>
     </div>
@@ -37,15 +37,15 @@ summary: Public archive of concise AI research digests.
 
   <article class="metric-block">
     <span class="metric-icon">▣</span>
-    <span class="metric-copy"><span class="metric-label">Briefs</span><strong class="metric-value">1</strong><span class="metric-sub">Total issues</span></span>
+    <span class="metric-copy"><span class="metric-label">Briefs</span><strong class="metric-value">2</strong><span class="metric-sub">Total issues</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◫</span>
-    <span class="metric-copy"><span class="metric-label">Papers archived</span><strong class="metric-value">6</strong><span class="metric-sub">Across all briefs</span></span>
+    <span class="metric-copy"><span class="metric-label">Papers archived</span><strong class="metric-value">24</strong><span class="metric-sub">Across all briefs</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◌</span>
-    <span class="metric-copy"><span class="metric-label">Core themes</span><strong class="metric-value">5</strong><span class="metric-sub">Current archive surface</span></span>
+    <span class="metric-copy"><span class="metric-label">Core themes</span><strong class="metric-value">6</strong><span class="metric-sub">Current archive surface</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◷</span>
@@ -62,26 +62,27 @@ summary: Public archive of concise AI research digests.
   <div class="discovery-grid">
     <article class="discovery-card latest-brief-card">
       <span class="card-badge">Current issue</span>
-      <p class="meta">2026-05-16 · 6 papers</p>
-      <h3><a href="2026/05/2026-05-16.html">AI Research Brief: 2026-05-16</a></h3>
-      <p class="digest-summary">First verified issue covering recent agent, multimodal, interaction, and privacy research and technical releases published or updated between May 6 and May 15, 2026.</p>
+      <p class="meta">2026-05-18 · 18 papers</p>
+      <h3><a href="2026/05/2026-05-18.html">AI Research Brief: 2026-05-18</a></h3>
+      <p class="digest-summary">Weekly issue covering strong agent, memory, retrieval, safety, recommender, and model-efficiency work published or updated between May 11 and May 18, 2026.</p>
       <div class="digest-meta-cluster">
-        <span class="digest-meta-chip">May 16, 2026</span>
-        <span class="digest-meta-chip">6 papers</span>
+        <span class="digest-meta-chip">May 18, 2026</span>
+        <span class="digest-meta-chip">18 papers</span>
         <span class="digest-meta-chip">Verified window</span>
       </div>
-      <div class="pill-row"><span class="pill">agents</span><span class="pill">llm</span><span class="pill">multimodal</span><span class="pill">evaluation</span><span class="pill">privacy</span></div>
-      <a class="text-link" href="2026/05/2026-05-16.html">Read full brief</a>
+      <div class="pill-row"><span class="pill">agents</span><span class="pill">llm</span><span class="pill">evaluation</span><span class="pill">privacy</span><span class="pill">recommender-systems</span></div>
+      <a class="text-link" href="2026/05/2026-05-18.html">Read full brief</a>
     </article>
     <aside class="feature-panel">
       <p class="section-kicker">Featured papers</p>
       <p class="feature-panel-intro">Ranked from the latest issue for fastest triage.</p>
       <ol class="featured-paper-list">
-        <li><span class="featured-rank">1</span><span>SkillCraft: Can LLM Agents learn to use tools skillfully?</span></li>
-        <li><span class="featured-rank">2</span><span>Agent-BRACE: Decoupling Beliefs from Actions in Long-Horizon Tasks via Verbalized State Uncertainty</span></li>
-        <li><span class="featured-rank">3</span><span>Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs</span></li>
+        <li><span class="featured-rank">1</span><span>FutureSim: Replaying World Events to Evaluate Adaptive Agents</span></li>
+        <li><span class="featured-rank">2</span><span>Is Grep All You Need? How Agent Harnesses Reshape Agentic Search</span></li>
+        <li><span class="featured-rank">3</span><span>Web Agents Should Adopt the Plan-Then-Execute Paradigm</span></li>
+        <li><span class="featured-rank">4</span><span>Making LLMs faster without sacrificing accuracy</span></li>
       </ol>
-      <a class="text-link" href="2026/05/2026-05-16.html">View all 6 papers</a>
+      <a class="text-link" href="2026/05/2026-05-18.html">View all 18 papers</a>
     </aside>
   </div>
 </section>
@@ -91,7 +92,7 @@ summary: Public archive of concise AI research digests.
       <h2>Explore by Theme</h2>
       <p class="home-section-intro">Jump into the topics shaping AI research this week.</p>
     </div>
-    <a class="section-heading-link" href="2026/05/2026-05-16.html">From latest issue</a>
+    <a class="section-heading-link" href="2026/05/2026-05-18.html">From latest issue</a>
   </div>
   <div class="theme-tile-grid">
     <article class="theme-tile" data-theme="agents">
@@ -99,34 +100,34 @@ summary: Public archive of concise AI research digests.
       <p class="section-kicker">Agents</p>
       <h3>Agents</h3>
       <p>Planning, tool use, memory, and multi-step reasoning.</p>
-      <strong>Current focus</strong>
+      <strong>Seen in 2 briefs</strong>
     </article>
     <article class="theme-tile" data-theme="llm">
       <span class="theme-tile-icon">◌</span>
       <p class="section-kicker">LLM</p>
       <h3>LLM</h3>
       <p>Model capabilities, alignment, and reasoning.</p>
-      <strong>Current focus</strong>
-    </article>
-    <article class="theme-tile" data-theme="multimodal">
-      <span class="theme-tile-icon">◍</span>
-      <p class="section-kicker">Multimodal</p>
-      <h3>Multimodal</h3>
-      <p>Vision, audio, and cross-modal understanding.</p>
-      <strong>Current focus</strong>
+      <strong>Seen in 2 briefs</strong>
     </article>
     <article class="theme-tile" data-theme="evaluation">
       <span class="theme-tile-icon">◇</span>
       <p class="section-kicker">Evaluation</p>
       <h3>Evaluation</h3>
       <p>Benchmarks, metrics, and robustness.</p>
-      <strong>Current focus</strong>
+      <strong>Seen in 2 briefs</strong>
     </article>
     <article class="theme-tile" data-theme="privacy">
       <span class="theme-tile-icon">◈</span>
       <p class="section-kicker">Privacy & Safety</p>
       <h3>Privacy & Safety</h3>
       <p>Privacy, safeguards, and responsible AI.</p>
+      <strong>Seen in 2 briefs</strong>
+    </article>
+    <article class="theme-tile" data-theme="recommender-systems">
+      <span class="theme-tile-icon">•</span>
+      <p class="section-kicker">Recommender Systems</p>
+      <h3>Recommender Systems</h3>
+      <p>Tracked across recent briefs.</p>
       <strong>Current focus</strong>
     </article>
   </div>
@@ -151,6 +152,12 @@ summary: Public archive of concise AI research digests.
       <span></span>
     </div>
     <article class="archive-ledger-row archive-ledger-row-latest">
+      <span class="archive-date">2026-05-18</span>
+      <span class="archive-count">18 items</span>
+      <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span><span class="theme-dot" title="Recommender Systems">•</span></span><span class="archive-theme-labels">Agents, LLM, Evaluation, Privacy & Safety, Recommender Systems</span></span>
+      <a class="archive-open" href="2026/05/2026-05-18.html" aria-label="Open AI Research Brief: 2026-05-18">Open issue</a>
+    </article>
+    <article class="archive-ledger-row">
       <span class="archive-date">2026-05-16</span>
       <span class="archive-count">6 items</span>
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation, Privacy & Safety</span></span>

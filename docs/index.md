@@ -41,11 +41,11 @@ summary: Public archive of concise AI research digests.
   </article>
   <article class="metric-block">
     <span class="metric-icon">◫</span>
-    <span class="metric-copy"><span class="metric-label">Papers indexed</span><strong class="metric-value">6</strong><span class="metric-sub">Across all briefs</span></span>
+    <span class="metric-copy"><span class="metric-label">Papers archived</span><strong class="metric-value">6</strong><span class="metric-sub">Across all briefs</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◌</span>
-    <span class="metric-copy"><span class="metric-label">Active themes</span><strong class="metric-value">5</strong><span class="metric-sub">Continuously tracked</span></span>
+    <span class="metric-copy"><span class="metric-label">Core themes</span><strong class="metric-value">5</strong><span class="metric-sub">Current archive surface</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◷</span>
@@ -61,7 +61,7 @@ summary: Public archive of concise AI research digests.
   </div>
   <div class="discovery-grid">
     <article class="discovery-card latest-brief-card">
-      <p class="meta">2026-05-16 · 6 items</p>
+      <p class="meta">2026-05-16 · 6 papers</p>
       <h3><a href="2026/05/2026-05-16.html">AI Research Brief: 2026-05-16</a></h3>
       <p class="digest-summary">First verified issue covering recent agent, multimodal, interaction, and privacy research and technical releases published or updated between May 6 and May 15, 2026.</p>
       <div class="pill-row"><span class="pill">agents</span><span class="pill">llm</span><span class="pill">multimodal</span><span class="pill">evaluation</span><span class="pill">privacy</span></div>
@@ -91,35 +91,35 @@ summary: Public archive of concise AI research digests.
       <p class="section-kicker">Agents</p>
       <h3>Agents</h3>
       <p>Planning, tool use, memory, and multi-step reasoning.</p>
-      <strong>Seen in 1 brief</strong>
+      <strong>Current focus</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◌</span>
       <p class="section-kicker">LLM</p>
       <h3>LLM</h3>
       <p>Model capabilities, alignment, and reasoning.</p>
-      <strong>Seen in 1 brief</strong>
+      <strong>Current focus</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◍</span>
       <p class="section-kicker">Multimodal</p>
       <h3>Multimodal</h3>
       <p>Vision, audio, and cross-modal understanding.</p>
-      <strong>Seen in 1 brief</strong>
+      <strong>Current focus</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◇</span>
       <p class="section-kicker">Evaluation</p>
       <h3>Evaluation</h3>
       <p>Benchmarks, metrics, and robustness.</p>
-      <strong>Seen in 1 brief</strong>
+      <strong>Current focus</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◈</span>
       <p class="section-kicker">Privacy & Safety</p>
       <h3>Privacy & Safety</h3>
       <p>Privacy, safeguards, and responsible AI.</p>
-      <strong>Seen in 1 brief</strong>
+      <strong>Current focus</strong>
     </article>
   </div>
 </section>
@@ -140,8 +140,9 @@ summary: Public archive of concise AI research digests.
     <article class="archive-ledger-row">
       <span class="archive-date">2026-05-16</span>
       <span class="archive-count">6</span>
-      <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation</span></span>
+      <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Multimodal">◍</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Multimodal, Evaluation, Privacy & Safety</span></span>
       <a class="archive-open" href="2026/05/2026-05-16.html" aria-label="Open AI Research Brief: 2026-05-16">→</a>
     </article>
+  <p class="archive-note">This archive is live and will fill out automatically as the Mon · Wed · Fri pipeline publishes new briefs.</p>
   </div>
 </section>

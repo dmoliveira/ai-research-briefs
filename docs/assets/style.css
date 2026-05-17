@@ -537,6 +537,14 @@ a:hover {
   overflow: hidden;
 }
 
+.archive-note {
+  margin: 0;
+  padding: 14px 18px 18px;
+  color: var(--muted);
+  border-top: 1px solid rgba(22, 20, 18, 0.08);
+  background: rgba(255, 255, 255, 0.24);
+}
+
 .archive-ledger-head,
 .archive-ledger-row {
   display: grid;
@@ -601,6 +609,22 @@ a:hover {
 
 .page-intro {
   padding-bottom: 14px;
+}
+
+.back-link {
+  margin: 0 0 0.9rem;
+}
+
+.back-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.back-link a::before {
+  content: "←";
 }
 
 .content h1 {
@@ -680,6 +704,10 @@ a:hover {
 .note-block ul,
 .note-block ol {
   margin: 0;
+}
+
+.caveat-card {
+  margin-top: 0.9rem;
 }
 
 .brief-priority-card,

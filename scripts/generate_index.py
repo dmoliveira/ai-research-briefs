@@ -175,7 +175,7 @@ summary: Public archive of concise AI research digests.
     tags = normalized_tags(featured_digest)
     featured = featured_digest["featured"] if isinstance(featured_digest["featured"], list) else []
     pills = "".join(f'<span class="pill">{tag}</span>' for tag in tags[:5])
-    source_count = f'{featured_digest["source_count"]} items' if featured_digest["source_count"] else "Digest"
+    source_count = f'{featured_digest["source_count"]} papers' if featured_digest["source_count"] else "Digest"
     lines.extend(
         [
             '  <article class="metric-block">',
@@ -184,11 +184,11 @@ summary: Public archive of concise AI research digests.
             '  </article>',
             '  <article class="metric-block">',
             '    <span class="metric-icon">◫</span>',
-            '    <span class="metric-copy"><span class="metric-label">Papers indexed</span><strong class="metric-value">' + str(total_sources) + '</strong><span class="metric-sub">Across all briefs</span></span>',
+            '    <span class="metric-copy"><span class="metric-label">Papers archived</span><strong class="metric-value">' + str(total_sources) + '</strong><span class="metric-sub">Across all briefs</span></span>',
             '  </article>',
             '  <article class="metric-block">',
             '    <span class="metric-icon">◌</span>',
-            '    <span class="metric-copy"><span class="metric-label">Active themes</span><strong class="metric-value">' + str(min(len(tag_counts), 12)) + '</strong><span class="metric-sub">Continuously tracked</span></span>',
+            '    <span class="metric-copy"><span class="metric-label">Core themes</span><strong class="metric-value">' + str(min(len(tag_counts), 12)) + '</strong><span class="metric-sub">Current archive surface</span></span>',
             '  </article>',
             '  <article class="metric-block">',
             '    <span class="metric-icon">◷</span>',
@@ -249,7 +249,7 @@ summary: Public archive of concise AI research digests.
                 f'      <p class="section-kicker">{meta["label"]}</p>',
                 f'      <h3>{meta["label"]}</h3>',
                 f'      <p>{meta["description"]}</p>',
-                f'      <strong>Seen in {count} brief{"s" if count != 1 else ""}</strong>',
+                f'      <strong>{"Current focus" if count == 1 else f"Seen in {count} briefs"}</strong>',
                 '    </article>',
             ]
         )
@@ -277,9 +277,9 @@ summary: Public archive of concise AI research digests.
         digest_tags = normalized_tags(digest)
         theme_pills = "".join(
             f'<span class="theme-dot" title="{tag_meta(tag)["label"]}">{tag_meta(tag)["icon"]}</span>'
-            for tag in digest_tags[:4]
+            for tag in digest_tags[:5]
         )
-        theme_labels = ", ".join(tag_meta(tag)["label"] for tag in digest_tags[:4])
+        theme_labels = ", ".join(tag_meta(tag)["label"] for tag in digest_tags[:5])
         lines.extend(
             [
                 '    <article class="archive-ledger-row">',
@@ -290,6 +290,8 @@ summary: Public archive of concise AI research digests.
                 '    </article>',
             ]
         )
+    if len(digests) == 1:
+        lines.append('  <p class="archive-note">This archive is live and will fill out automatically as the Mon · Wed · Fri pipeline publishes new briefs.</p>')
     lines.extend(['  </div>', '</section>'])
     return "\n".join(line for line in lines if line != "")
 

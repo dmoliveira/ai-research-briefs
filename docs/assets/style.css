@@ -231,7 +231,7 @@ a:hover {
 
 .top-note p {
   margin: 0;
-  font-size: 0.94rem;
+  font-size: 0.9rem;
 }
 
 .top-note-shell {
@@ -290,6 +290,7 @@ a:hover {
 .hero-copy p {
   font-size: 1.12rem;
   max-width: 36rem;
+  color: var(--muted);
 }
 
 .hero-actions {
@@ -356,6 +357,9 @@ a:hover {
   gap: 12px;
   align-items: start;
   padding: 16px 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.44), rgba(255, 255, 255, 0.16)),
+    var(--panel);
 }
 
 .metric-icon,
@@ -518,12 +522,14 @@ a:hover {
 
 .theme-tile {
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  min-height: 100%;
 }
 
 .theme-tile strong {
   display: block;
   margin-top: 0.9rem;
   font-size: 0.95rem;
+  color: var(--ink);
 }
 
 .archive-ledger {
@@ -555,6 +561,10 @@ a:hover {
 
 .archive-ledger-row + .archive-ledger-row {
   border-top: 1px solid rgba(22, 20, 18, 0.08);
+}
+
+.archive-ledger-row {
+  transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
 }
 
 .archive-themes {
@@ -638,6 +648,7 @@ a:hover {
 
 .brief-jump-nav {
   margin: 1.2rem 0 1.7rem;
+  padding-bottom: 0.2rem;
 }
 
 .brief-jump-nav a:hover {
@@ -674,6 +685,9 @@ a:hover {
 .brief-priority-card,
 .brief-trend-card {
   padding: 16px 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.44), rgba(255, 255, 255, 0.16)),
+    var(--panel);
 }
 
 .entry-card {
@@ -718,6 +732,10 @@ a:hover {
 .entry-section {
   padding-top: 0.72rem;
   border-top: 1px solid rgba(22, 20, 18, 0.08);
+}
+
+.entry-section:first-child {
+  padding-top: 0.1rem;
 }
 
 .entry-section p {

@@ -49,7 +49,7 @@ summary: Public archive of concise AI research digests.
   </article>
   <article class="metric-block">
     <span class="metric-icon">◷</span>
-    <span class="metric-copy"><span class="metric-label">Cadence</span><strong class="metric-value">Mon · Wed · Fri</strong><span class="metric-sub">Weekly rhythm</span></span>
+    <span class="metric-copy"><span class="metric-label">Cadence</span><strong class="metric-value">Mon · Wed · Fri</strong><span class="metric-sub">Scheduled publication</span></span>
   </article>
 </section>
 <section class="home-section discovery-section">
@@ -91,35 +91,35 @@ summary: Public archive of concise AI research digests.
       <p class="section-kicker">Agents</p>
       <h3>Agents</h3>
       <p>Planning, tool use, memory, and multi-step reasoning.</p>
-      <strong>1 brief</strong>
+      <strong>Seen in 1 brief</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◌</span>
       <p class="section-kicker">LLM</p>
       <h3>LLM</h3>
       <p>Model capabilities, alignment, and reasoning.</p>
-      <strong>1 brief</strong>
+      <strong>Seen in 1 brief</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◍</span>
       <p class="section-kicker">Multimodal</p>
       <h3>Multimodal</h3>
       <p>Vision, audio, and cross-modal understanding.</p>
-      <strong>1 brief</strong>
+      <strong>Seen in 1 brief</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◇</span>
       <p class="section-kicker">Evaluation</p>
       <h3>Evaluation</h3>
       <p>Benchmarks, metrics, and robustness.</p>
-      <strong>1 brief</strong>
+      <strong>Seen in 1 brief</strong>
     </article>
     <article class="theme-tile">
       <span class="theme-tile-icon">◈</span>
       <p class="section-kicker">Privacy & Safety</p>
       <h3>Privacy & Safety</h3>
       <p>Privacy, safeguards, and responsible AI.</p>
-      <strong>1 brief</strong>
+      <strong>Seen in 1 brief</strong>
     </article>
   </div>
 </section>

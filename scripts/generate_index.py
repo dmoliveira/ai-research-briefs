@@ -192,7 +192,7 @@ summary: Public archive of concise AI research digests.
             '  </article>',
             '  <article class="metric-block">',
             '    <span class="metric-icon">◷</span>',
-            '    <span class="metric-copy"><span class="metric-label">Cadence</span><strong class="metric-value">Mon · Wed · Fri</strong><span class="metric-sub">Weekly rhythm</span></span>',
+            '    <span class="metric-copy"><span class="metric-label">Cadence</span><strong class="metric-value">Mon · Wed · Fri</strong><span class="metric-sub">Scheduled publication</span></span>',
             '  </article>',
             '</section>',
             '<section class="home-section discovery-section">',
@@ -249,7 +249,7 @@ summary: Public archive of concise AI research digests.
                 f'      <p class="section-kicker">{meta["label"]}</p>',
                 f'      <h3>{meta["label"]}</h3>',
                 f'      <p>{meta["description"]}</p>',
-                f'      <strong>{count} brief{"s" if count != 1 else ""}</strong>',
+                f'      <strong>Seen in {count} brief{"s" if count != 1 else ""}</strong>',
                 '    </article>',
             ]
         )

@@ -50,7 +50,7 @@
       <main class="content">
         <section class="top-note top-note-shell">
           <p>✧ Independent. Lightweight. Unbiased.</p>
-          <p>Updated weekly rhythm · Every Mon · Wed · Fri</p>
+          <p>Updated Mon · Wed · Fri</p>
         </section>
         {% unless page.url == "/" %}
           <section class="page-intro">
@@ -73,9 +73,6 @@
             </div>
             {% if page.source_count or page.tags %}
               <div class="page-meta-row">
-                {% if page.source_count %}
-                  <span class="intro-pill intro-pill-strong">{{ page.source_count }} indexed items</span>
-                {% endif %}
                 {% for tag in page.tags limit: 5 %}
                   <span class="intro-pill">{{ tag }}</span>
                 {% endfor %}

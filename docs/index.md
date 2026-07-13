@@ -13,7 +13,7 @@ summary: Public archive of concise AI research digests.
         and adjacent engineering research, shaped for applied builders rather than hype cycles.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="2026/07/2026-07-10.html">Open latest brief</a>
+        <a class="button primary" href="2026/07/2026-07-13.html">Open latest brief</a>
         <a class="button tertiary" href="#recent-briefs">Explore archive</a>
       </div>
     </div>
@@ -37,11 +37,11 @@ summary: Public archive of concise AI research digests.
 
   <article class="metric-block">
     <span class="metric-icon">▣</span>
-    <span class="metric-copy"><span class="metric-label">Briefs</span><strong class="metric-value">13</strong><span class="metric-sub">Total issues</span></span>
+    <span class="metric-copy"><span class="metric-label">Briefs</span><strong class="metric-value">14</strong><span class="metric-sub">Total issues</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◫</span>
-    <span class="metric-copy"><span class="metric-label">Papers archived</span><strong class="metric-value">221</strong><span class="metric-sub">Across all briefs</span></span>
+    <span class="metric-copy"><span class="metric-label">Papers archived</span><strong class="metric-value">241</strong><span class="metric-sub">Across all briefs</span></span>
   </article>
   <article class="metric-block">
     <span class="metric-icon">◌</span>
@@ -62,27 +62,27 @@ summary: Public archive of concise AI research digests.
   <div class="discovery-grid">
     <article class="discovery-card latest-brief-card">
       <span class="card-badge">Current issue</span>
-      <p class="meta">2026-07-10 · 18 papers</p>
-      <h3><a href="2026/07/2026-07-10.html">AI Research Brief: 2026-07-10</a></h3>
-      <p class="digest-summary">Weekly issue covering high-signal AI research and engineering work published or newly updated between July 3 and July 10, 2026, with emphasis on realistic agent benchmarks, long-horizon memory, tool-use diagnostics, web and software agents, agentic recommender systems, privacy, execution integrity, and efficient evaluation.</p>
+      <p class="meta">2026-07-13 · 20 papers</p>
+      <h3><a href="2026/07/2026-07-13.html">AI Research Brief: 2026-07-13</a></h3>
+      <p class="digest-summary">Weekly issue covering high-signal AI research and engineering work published or newly updated between July 6 and July 13, 2026, with emphasis on interpretable model workspaces, controllable dual-use knowledge, agent failure diagnosis, AI-native data workflows, recommender systems, multimodal memory, and cost-aware LLM serving.</p>
       <div class="digest-meta-cluster">
-        <span class="digest-meta-chip">Jul 10, 2026</span>
-        <span class="digest-meta-chip">18 papers</span>
+        <span class="digest-meta-chip">Jul 13, 2026</span>
+        <span class="digest-meta-chip">20 papers</span>
         <span class="digest-meta-chip">Verified window</span>
       </div>
-      <div class="pill-row"><span class="pill">agents</span><span class="pill">llm</span><span class="pill">evaluation</span><span class="pill">recommender-systems</span><span class="pill">safety</span></div>
-      <a class="text-link" href="2026/07/2026-07-10.html">Read full brief</a>
+      <div class="pill-row"><span class="pill">agents</span><span class="pill">llm</span><span class="pill">evaluation</span><span class="pill">recommender-systems</span><span class="pill">privacy</span></div>
+      <a class="text-link" href="2026/07/2026-07-13.html">Read full brief</a>
     </article>
     <aside class="feature-panel">
       <p class="section-kicker">Featured papers</p>
       <p class="feature-panel-intro">Ranked from the latest issue for fastest triage.</p>
       <ol class="featured-paper-list">
-        <li><span class="featured-rank">1</span><span>UniClawBench</span></li>
-        <li><span class="featured-rank">2</span><span>AgentGym2</span></li>
-        <li><span class="featured-rank">3</span><span>Proactive Memory Agent</span></li>
-        <li><span class="featured-rank">4</span><span>ToolFailBench</span></li>
+        <li><span class="featured-rank">1</span><span>A global workspace in language models</span></li>
+        <li><span class="featured-rank">2</span><span>An off switch for dual-use knowledge in AI models</span></li>
+        <li><span class="featured-rank">3</span><span>Spider 2.0-AIFunc</span></li>
+        <li><span class="featured-rank">4</span><span>AgentLocate</span></li>
       </ol>
-      <a class="text-link" href="2026/07/2026-07-10.html">View all 18 papers</a>
+      <a class="text-link" href="2026/07/2026-07-13.html">View all 20 papers</a>
     </aside>
   </div>
 </section>
@@ -92,7 +92,7 @@ summary: Public archive of concise AI research digests.
       <h2>Explore by Theme</h2>
       <p class="home-section-intro">Jump into the topics shaping AI research this week.</p>
     </div>
-    <a class="section-heading-link" href="2026/07/2026-07-10.html">From latest issue</a>
+    <a class="section-heading-link" href="2026/07/2026-07-13.html">From latest issue</a>
   </div>
   <div class="theme-tile-grid">
     <article class="theme-tile" data-theme="agents">
@@ -100,21 +100,28 @@ summary: Public archive of concise AI research digests.
       <p class="section-kicker">Agents</p>
       <h3>Agents</h3>
       <p>Planning, tool use, memory, and multi-step reasoning.</p>
-      <strong>Seen in 13 briefs</strong>
+      <strong>Seen in 14 briefs</strong>
     </article>
     <article class="theme-tile" data-theme="llm">
       <span class="theme-tile-icon">◌</span>
       <p class="section-kicker">LLM</p>
       <h3>LLM</h3>
       <p>Model capabilities, alignment, and reasoning.</p>
-      <strong>Seen in 13 briefs</strong>
+      <strong>Seen in 14 briefs</strong>
     </article>
     <article class="theme-tile" data-theme="evaluation">
       <span class="theme-tile-icon">◇</span>
       <p class="section-kicker">Evaluation</p>
       <h3>Evaluation</h3>
       <p>Benchmarks, metrics, and robustness.</p>
-      <strong>Seen in 13 briefs</strong>
+      <strong>Seen in 14 briefs</strong>
+    </article>
+    <article class="theme-tile" data-theme="recommender-systems">
+      <span class="theme-tile-icon">•</span>
+      <p class="section-kicker">Recommender Systems</p>
+      <h3>Recommender Systems</h3>
+      <p>Tracked across recent briefs.</p>
+      <strong>Seen in 7 briefs</strong>
     </article>
     <article class="theme-tile" data-theme="safety">
       <span class="theme-tile-icon">•</span>
@@ -122,13 +129,6 @@ summary: Public archive of concise AI research digests.
       <h3>Safety</h3>
       <p>Tracked across recent briefs.</p>
       <strong>Seen in 7 briefs</strong>
-    </article>
-    <article class="theme-tile" data-theme="recommender-systems">
-      <span class="theme-tile-icon">•</span>
-      <p class="section-kicker">Recommender Systems</p>
-      <h3>Recommender Systems</h3>
-      <p>Tracked across recent briefs.</p>
-      <strong>Seen in 6 briefs</strong>
     </article>
   </div>
 </section>
@@ -152,6 +152,12 @@ summary: Public archive of concise AI research digests.
       <span></span>
     </div>
     <article class="archive-ledger-row archive-ledger-row-latest">
+      <span class="archive-date">2026-07-13</span>
+      <span class="archive-count">20 items</span>
+      <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Recommender Systems">•</span><span class="theme-dot" title="Privacy & Safety">◈</span></span><span class="archive-theme-labels">Agents, LLM, Evaluation, Recommender Systems, Privacy & Safety</span></span>
+      <a class="archive-open" href="2026/07/2026-07-13.html" aria-label="Open AI Research Brief: 2026-07-13">Open issue</a>
+    </article>
+    <article class="archive-ledger-row">
       <span class="archive-date">2026-07-10</span>
       <span class="archive-count">18 items</span>
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Recommender Systems">•</span><span class="theme-dot" title="Safety">•</span></span><span class="archive-theme-labels">Agents, LLM, Evaluation, Recommender Systems, Safety</span></span>
@@ -192,12 +198,6 @@ summary: Public archive of concise AI research digests.
       <span class="archive-count">18 items</span>
       <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Safety">•</span><span class="theme-dot" title="Recommender Systems">•</span></span><span class="archive-theme-labels">Agents, LLM, Evaluation, Safety, Recommender Systems</span></span>
       <a class="archive-open" href="2026/05/2026-05-29.html" aria-label="Open AI Research Brief: 2026-05-29">Open issue</a>
-    </article>
-    <article class="archive-ledger-row">
-      <span class="archive-date">2026-05-27</span>
-      <span class="archive-count">18 items</span>
-      <span class="archive-themes"><span class="theme-dot-row"><span class="theme-dot" title="Agents">◎</span><span class="theme-dot" title="LLM">◌</span><span class="theme-dot" title="Evaluation">◇</span><span class="theme-dot" title="Safety">•</span><span class="theme-dot" title="Recommender Systems">•</span></span><span class="archive-theme-labels">Agents, LLM, Evaluation, Safety, Recommender Systems</span></span>
-      <a class="archive-open" href="2026/05/2026-05-27.html" aria-label="Open AI Research Brief: 2026-05-27">Open issue</a>
     </article>
   </div>
 </section>
